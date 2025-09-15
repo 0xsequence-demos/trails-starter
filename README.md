@@ -58,4 +58,5 @@ Each widget uses the same underlying `TrailsWidget` and differs by `mode` and a 
 
 ## Notes
 
-- For advanced usage and prop reference, see the Trails docs (`https://docs.trails.build`).
+- For advanced usage and prop reference, see the Trails docs (`https://docs.trails.build`)
+- AI enabled wtih a `.cursorrules` file and MCP server for Cursor or Claude available [here](https://docs.trails.build/resources/llm-integration).
