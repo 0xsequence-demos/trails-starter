@@ -23,8 +23,8 @@ export default function PayWidget() {
           </a>
         </CardTitle>
         <CardDescription>
-          Exact-output payments. You set the amount the recipient receives; the
-          user pays what's needed.
+          Payment flow for trails. You set the amount and token the recipient should receive; the
+          user can pay in any token from any chain.
         </CardDescription>
       </CardHeader>
       <CardFooter className="mt-auto justify-center w-full">

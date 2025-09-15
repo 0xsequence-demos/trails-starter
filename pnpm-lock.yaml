@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   0xtrails:
-    specifier: ^0.1.4
-    version: 0.1.4(@0xsequence/hooks@5.3.14)(@tanstack/react-query@5.87.1)(@types/react-dom@19.1.9)(@types/react@19.1.12)(@urql/core@5.2.0)(ethers@6.15.0)(react-dom@19.1.1)(react@19.1.1)(thirdweb@5.105.42)(typescript@5.9.2)(viem@2.37.5)(wagmi@2.16.9)
+    specifier: ^0.1.6
+    version: 0.1.6(@0xsequence/hooks@5.3.14)(@tanstack/react-query@5.87.1)(@types/react-dom@19.1.9)(@types/react@19.1.12)(@urql/core@5.2.0)(ethers@6.15.0)(react-dom@19.1.1)(react@19.1.1)(thirdweb@5.105.42)(typescript@5.9.2)(viem@2.37.5)(wagmi@2.16.9)
   '@radix-ui/react-label':
     specifier: ^2.1.7
     version: 2.1.7(@types/react-dom@19.1.9)(@types/react@19.1.12)(react-dom@19.1.1)(react@19.1.1)
@@ -91,8 +91,8 @@ devDependencies:
 
 packages:
 
-  /0xtrails@0.1.4(@0xsequence/hooks@5.3.14)(@tanstack/react-query@5.87.1)(@types/react-dom@19.1.9)(@types/react@19.1.12)(@urql/core@5.2.0)(ethers@6.15.0)(react-dom@19.1.1)(react@19.1.1)(thirdweb@5.105.42)(typescript@5.9.2)(viem@2.37.5)(wagmi@2.16.9):
-    resolution: {integrity: sha512-cu+9pc/HBlptgk/zD47OoHyGOlGsLq71NGJ/CGLUVqukGmDNNOXVSbHgJhch/DJab2CkWDY+TRUBXw/PgFZglQ==}
+  /0xtrails@0.1.6(@0xsequence/hooks@5.3.14)(@tanstack/react-query@5.87.1)(@types/react-dom@19.1.9)(@types/react@19.1.12)(@urql/core@5.2.0)(ethers@6.15.0)(react-dom@19.1.1)(react@19.1.1)(thirdweb@5.105.42)(typescript@5.9.2)(viem@2.37.5)(wagmi@2.16.9):
+    resolution: {integrity: sha512-ZWWytIKFE73Zm25N6FT2eApluWYpsB4uonCEoSSwttm2URR/pq4JA3HX4mR6Dv8W/1m1PSmo0AD4dHl3zDHFvA==}
     requiresBuild: true
     peerDependencies:
       '@0xsequence/hooks': ^5.3.13
@@ -112,10 +112,10 @@ packages:
       '@0xsequence/network': 2.3.28(ethers@6.15.0)
       '@0xsequence/sessions': 2.3.28(ethers@6.15.0)
       '@0xsequence/signhub': 2.3.28(ethers@6.15.0)
-      '@0xsequence/trails-api': 0.0.4
-      '@0xsequence/trails-relayer': 0.0.3
-      '@0xsequence/wallet-core': github.com/0xsequence/sequence.js/3a4b89ea5cbad823a1f2d9a66723f928ef6550cc(typescript@5.9.2)
-      '@0xsequence/wallet-primitives': github.com/0xsequence/sequence.js/3a2e346bf51373d9ca3ffff423fcaef459833893(typescript@5.9.2)
+      '@0xsequence/trails-api': 0.0.6
+      '@0xsequence/trails-relayer': 0.0.5
+      '@0xsequence/wallet-core': github.com/0xsequence/sequence.js/75ce1b9a138043919964a7fb68a082bba9541f7b(typescript@5.9.2)
+      '@0xsequence/wallet-primitives': github.com/0xsequence/sequence.js/2b0cf42b2af44aebf81943bce2a04ca5c79d01fc(typescript@5.9.2)
       '@aave/react': 0.4.0(@types/react@19.1.12)(@urql/core@5.2.0)(ethers@6.15.0)(react@19.1.1)(thirdweb@5.105.42)(typescript@5.9.2)(viem@2.37.5)
       '@databeat/tracker': 0.9.3
       '@meshconnect/web-link-sdk': 3.2.14
@@ -336,12 +336,12 @@ packages:
       ethers: 6.15.0
     dev: false
 
-  /@0xsequence/trails-api@0.0.4:
-    resolution: {integrity: sha512-CpQpeaK/iPJ0mm+EtsRA4ZtLseoKAISeE9SjIihjPPOMrP5dTtG0eYMgCulAbB1c51JAo8GX5Wd3Qj1rhkdZSA==}
+  /@0xsequence/trails-api@0.0.6:
+    resolution: {integrity: sha512-dH754HCT5yYkJNkUVmQD9ReHdzKtnPctmGF2B/JvXheenfcZ83TiSZIXLGEDTD0QBevSez6KNGbCUSmxrGmTMw==}
     dev: false
 
-  /@0xsequence/trails-relayer@0.0.3:
-    resolution: {integrity: sha512-xKdWZeXa7X7nZUHAEjWprrm+q836K00c1p/baKWTmXj66MXEhBBLEWupBKPZqpFTIEDVqfXxrl1H9NxDpWWmWA==}
+  /@0xsequence/trails-relayer@0.0.5:
+    resolution: {integrity: sha512-qzhU7YPCGda/YY8yLMYMcj+qlPd3+w0gNiAbyvJPKdfNxHrcEFakVXAXhlrLfOkqe3xiWxXwK2zcFrB/VS4cwg==}
     dev: false
 
   /@0xsequence/utils@2.3.28(ethers@6.15.0):
@@ -9304,21 +9304,9 @@ packages:
       use-sync-external-store: 1.4.0(react@19.1.1)
     dev: false
 
-  github.com/0xsequence/sequence.js/333625292364fe15644e78f98ea5398337f488e1(typescript@5.9.2):
-    resolution: {tarball: https://codeload.github.com/0xsequence/sequence.js/tar.gz/333625292364fe15644e78f98ea5398337f488e1}
-    id: github.com/0xsequence/sequence.js/333625292364fe15644e78f98ea5398337f488e1
-    name: '@0xsequence/guard'
-    version: 3.0.0
-    dependencies:
-      ox: 0.7.2(typescript@5.9.2)
-    transitivePeerDependencies:
-      - typescript
-      - zod
-    dev: false
-
-  github.com/0xsequence/sequence.js/3a2e346bf51373d9ca3ffff423fcaef459833893(typescript@5.9.2):
-    resolution: {tarball: https://codeload.github.com/0xsequence/sequence.js/tar.gz/3a2e346bf51373d9ca3ffff423fcaef459833893}
-    id: github.com/0xsequence/sequence.js/3a2e346bf51373d9ca3ffff423fcaef459833893
+  github.com/0xsequence/sequence.js/2b0cf42b2af44aebf81943bce2a04ca5c79d01fc(typescript@5.9.2):
+    resolution: {tarball: https://codeload.github.com/0xsequence/sequence.js/tar.gz/2b0cf42b2af44aebf81943bce2a04ca5c79d01fc}
+    id: github.com/0xsequence/sequence.js/2b0cf42b2af44aebf81943bce2a04ca5c79d01fc
     name: '@0xsequence/wallet-primitives'
     version: 0.0.0
     dependencies:
@@ -9328,15 +9316,15 @@ packages:
       - zod
     dev: false
 
-  github.com/0xsequence/sequence.js/3a4b89ea5cbad823a1f2d9a66723f928ef6550cc(typescript@5.9.2):
-    resolution: {tarball: https://codeload.github.com/0xsequence/sequence.js/tar.gz/3a4b89ea5cbad823a1f2d9a66723f928ef6550cc}
-    id: github.com/0xsequence/sequence.js/3a4b89ea5cbad823a1f2d9a66723f928ef6550cc
+  github.com/0xsequence/sequence.js/75ce1b9a138043919964a7fb68a082bba9541f7b(typescript@5.9.2):
+    resolution: {tarball: https://codeload.github.com/0xsequence/sequence.js/tar.gz/75ce1b9a138043919964a7fb68a082bba9541f7b}
+    id: github.com/0xsequence/sequence.js/75ce1b9a138043919964a7fb68a082bba9541f7b
     name: '@0xsequence/wallet-core'
     version: 0.0.0
     dependencies:
-      '@0xsequence/guard': github.com/0xsequence/sequence.js/333625292364fe15644e78f98ea5398337f488e1(typescript@5.9.2)
-      '@0xsequence/relayer': github.com/0xsequence/sequence.js/59776b9083c5fba5f572fee0f86705ad47d39f6c
-      '@0xsequence/wallet-primitives': github.com/0xsequence/sequence.js/3a2e346bf51373d9ca3ffff423fcaef459833893(typescript@5.9.2)
+      '@0xsequence/guard': github.com/0xsequence/sequence.js/a228c0e41992f16eacb9b53417435e708ab26e74(typescript@5.9.2)
+      '@0xsequence/relayer': github.com/0xsequence/sequence.js/d2a91b6ac04919a092ef543d2555e497ec2b3ba2
+      '@0xsequence/wallet-primitives': github.com/0xsequence/sequence.js/2b0cf42b2af44aebf81943bce2a04ca5c79d01fc(typescript@5.9.2)
       mipd: 0.0.7(typescript@5.9.2)
       ox: 0.7.2(typescript@5.9.2)
       viem: 2.37.5(typescript@5.9.2)
@@ -9347,8 +9335,20 @@ packages:
       - zod
     dev: false
 
-  github.com/0xsequence/sequence.js/59776b9083c5fba5f572fee0f86705ad47d39f6c:
-    resolution: {tarball: https://codeload.github.com/0xsequence/sequence.js/tar.gz/59776b9083c5fba5f572fee0f86705ad47d39f6c}
+  github.com/0xsequence/sequence.js/a228c0e41992f16eacb9b53417435e708ab26e74(typescript@5.9.2):
+    resolution: {tarball: https://codeload.github.com/0xsequence/sequence.js/tar.gz/a228c0e41992f16eacb9b53417435e708ab26e74}
+    id: github.com/0xsequence/sequence.js/a228c0e41992f16eacb9b53417435e708ab26e74
+    name: '@0xsequence/guard'
+    version: 3.0.0
+    dependencies:
+      ox: 0.7.2(typescript@5.9.2)
+    transitivePeerDependencies:
+      - typescript
+      - zod
+    dev: false
+
+  github.com/0xsequence/sequence.js/d2a91b6ac04919a092ef543d2555e497ec2b3ba2:
+    resolution: {tarball: https://codeload.github.com/0xsequence/sequence.js/tar.gz/d2a91b6ac04919a092ef543d2555e497ec2b3ba2}
     name: '@0xsequence/relayer'
     version: 3.0.0
     dev: false

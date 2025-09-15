@@ -3,14 +3,6 @@ import SwapWidget from "./trails/SwapWidget";
 import EarnWidget from "./trails/EarnWidget";
 import PayWidget from "./trails/PayWidget";
 import FundWidget from "./trails/FundWidget";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardDescription,
-  CardContent,
-  CardFooter,
-} from "./ui/card";
 
 export default function ClientHome() {
   return (
