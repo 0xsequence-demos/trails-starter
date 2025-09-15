@@ -44,8 +44,6 @@ pnpm dev
 
 Open `http://localhost:5173`.
 
-## Trails Flows
-
 Each widget uses the same underlying `TrailsWidget` and differs by `mode` and a few props. See `components/trails/*.tsx` for concrete usage for each and UX flows.
 
 ## Theming
