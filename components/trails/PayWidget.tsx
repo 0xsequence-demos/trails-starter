@@ -31,7 +31,6 @@ export default function PayWidget() {
         <TrailsWidget
           mode="pay"
           theme="auto"
-          sequenceEnv="dev"
           appId={import.meta.env.VITE_TRAILS_APP_ID ?? ""}
           toAddress="0xF69F076c7225651b30d17B1a9C454319A4CfE77c"
           toAmount="0.1"

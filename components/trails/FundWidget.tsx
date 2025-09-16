@@ -32,7 +32,6 @@ export default function FundWidget() {
           toChainId={8453} // Base
           toToken="USDC"
           theme="auto"
-          sequenceEnv="dev"
           appId={import.meta.env.VITE_TRAILS_APP_ID ?? ""}
           buttonText="Fund Account"
           customCss={`
