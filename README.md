@@ -28,11 +28,10 @@ pnpm i
 Copy the `.env.example` to `.env` file in the project root:
 
 ```env
-# Any arbitrary string
-VITE_TRAILS_APP_ID=
-
-# WalletConnect Project ID for RainbowKit/WalletConnect
+# Optional walletconnect ID if you'd like walletconnect support from https://cloud.walletconnect.com/.
 VITE_WALLETCONNECT_PROJECT_ID=
+# Optional app id - can be any arbitrary string for data/event tracking purposes
+VITE_TRAILS_APP_ID=
 ```
 
 ### 4) Start the dev server
