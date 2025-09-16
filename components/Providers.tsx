@@ -3,13 +3,13 @@ import { WagmiProvider } from "wagmi";
 import { injectedWallet } from '@rainbow-me/rainbowkit/wallets';
 // Optional wallets (uncomment to enable)
 // import { walletConnectWallet, rainbowWallet } from '@rainbow-me/rainbowkit/wallets';
-import { mainnet, polygon, optimism, arbitrum, base } from "wagmi/chains";
+import { mainnet, polygon, optimism, arbitrum, base, soneium } from "wagmi/chains";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 
 const config = getDefaultConfig({
   appName: "Trails Starter",
   projectId: import.meta.env.VITE_WALLETCONNECT_PROJECT_ID ?? "",
-  chains: [mainnet, polygon, optimism, arbitrum, base],
+  chains: [mainnet, polygon, optimism, arbitrum, base, soneium],
   wallets: [
     {
       groupName: "Injected Wallets",
