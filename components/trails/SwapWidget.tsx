@@ -32,7 +32,6 @@ export default function SwapWidget() {
         <TrailsWidget
           mode="swap"
           theme="auto"
-          appId={import.meta.env.VITE_TRAILS_APP_ID ?? ""}
           buttonText="Swap with Trails"
           customCss={`
             --trails-font-family: "Century Gothic", "Arial", sans-serif;

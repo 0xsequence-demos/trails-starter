@@ -31,7 +31,6 @@ export default function EarnWidget() {
         <TrailsWidget
           mode="earn"
           theme="auto"
-          appId={import.meta.env.VITE_TRAILS_APP_ID ?? ""}
           buttonText="Start Earning"
           customCss={`
             --trails-border-radius-button: 9999px;

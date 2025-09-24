@@ -6,6 +6,7 @@ import {
   CardDescription,
   CardFooter,
 } from "../ui/card";
+import { Button } from "../ui/button";
 
 export default function FundWidget() {
   return (
@@ -29,11 +30,9 @@ export default function FundWidget() {
       <CardFooter className="mt-auto justify-center w-full">
         <TrailsWidget
           mode="fund"
-          toChainId={8453} // Base
-          toToken="USDC"
+          toChainId={5031} // Base
+          toToken="0x28bec7e30e6faee657a03e19bf1128aad7632a00"
           theme="auto"
-          appId={import.meta.env.VITE_TRAILS_APP_ID ?? ""}
-          buttonText="Fund Account"
           customCss={`
             --trails-border-radius-button: 9999px;
             --trails-primary: #F59E0B; /* amber-500 */
@@ -42,6 +41,12 @@ export default function FundWidget() {
             --trails-focus-ring: rgba(245,158,11,.35);
           `}
         >
+          <Button
+            type="button"
+            className="h-10 w-full rounded-full p-0 font-semibold bg-blue-500 text-white hover:bg-blue-600"
+          >
+            Fund Account
+          </Button>
         </TrailsWidget>
       </CardFooter>
     </Card>

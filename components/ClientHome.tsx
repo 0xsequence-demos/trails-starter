@@ -18,6 +18,7 @@ export default function ClientHome() {
         <PayWidget />
         <FundWidget />
       </div>
+
     </div>
   );
 }
