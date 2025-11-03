@@ -9,7 +9,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "0xtrails": "^0.2.5",
+    "0xtrails": "^0.2.6",
     "@0xsequence/hooks": "^5.3.15",
     "@radix-ui/react-slot": "^1.2.3",
     "@rainbow-me/rainbowkit": "^2.2.8",
