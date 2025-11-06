@@ -14,7 +14,7 @@ export default function PayWidget() {
       <CardHeader>
         <CardTitle>
           <a
-            href="https://docs.trails.build/examples/pay"
+            href="https://docs.trails.build/use-cases/pay"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-1 underline underline-offset-2 text-primary"
