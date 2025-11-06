@@ -14,7 +14,7 @@ export default function FundWidget() {
       <CardHeader>
         <CardTitle>
           <a
-            href="https://docs.trails.build/examples/fund"
+            href="https://docs.trails.build/use-cases/fund"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-1 underline underline-offset-2 text-primary"
