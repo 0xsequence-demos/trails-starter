@@ -14,7 +14,7 @@ export default function EarnWidget() {
       <CardHeader>
         <CardTitle>
           <a
-            href="https://docs.trails.build/examples/earn"
+            href="https://docs.trails.build/use-cases/earn"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-1 underline underline-offset-2 text-primary"
