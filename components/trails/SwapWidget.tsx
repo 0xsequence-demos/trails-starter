@@ -1,6 +1,4 @@
 import { TrailsWidget } from "0xtrails/widget";
-import { Button } from "../ui/button";
-import { ArrowLeftRight } from "lucide-react";
 import {
   Card,
   CardHeader,

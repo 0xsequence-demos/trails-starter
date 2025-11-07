@@ -1,5 +1,4 @@
 import { TrailsWidget } from "0xtrails/widget";
-import { CreditCard } from "lucide-react";
 import {
   Card,
   CardHeader,

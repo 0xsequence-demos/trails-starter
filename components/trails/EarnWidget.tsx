@@ -1,5 +1,4 @@
 import { TrailsWidget } from "0xtrails/widget";
-import { Coins } from "lucide-react";
 import {
   Card,
   CardHeader,
