@@ -28,9 +28,13 @@ pnpm i
 Copy the `.env.example` to `.env` file in the project root:
 
 ```env
+# Request an access key at https://t.me/build_with_trails
+VITE_TRAILS_API_KEY="ADD_API_KEY_HERE"
 # Optional walletconnect ID if you'd like walletconnect support, retrieved from https://cloud.walletconnect.com/.
 VITE_WALLETCONNECT_PROJECT_ID=
 ```
+
+
 
 ### 4) Start the dev server
 
