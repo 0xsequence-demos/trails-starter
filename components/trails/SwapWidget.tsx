@@ -9,6 +9,8 @@ import {
   CardFooter,
 } from "../ui/card";
 
+const apiKey = import.meta.env.VITE_TRAILS_API_KEY;
+
 export default function SwapWidget() {
   return (
     <Card className="h-full">
@@ -30,6 +32,7 @@ export default function SwapWidget() {
       </CardHeader>
       <CardFooter className="mt-auto justify-center w-full">
         <TrailsWidget
+          apiKey={apiKey}
           mode="swap"
           theme="auto"
           buttonText="Swap with Trails"
@@ -41,6 +44,14 @@ export default function SwapWidget() {
             --trails-text-inverse: rgb(255 255 255);
             --trails-focus-ring: rgb(255 0 199);
           `}
+          onOriginConfirmation={({txHash:ye,chainId:qe,sessionId:Ze})=>console.log("onOriginConfirmation:",{txHash:ye,chainId:qe,sessionId:Ze})}
+          onDestinationConfirmation={({txHash:ye,chainId:qe,sessionId:Ze})=>console.log("onDestinationConfirmation:",{txHash:ye,chainId:qe,sessionId:Ze})}
+          onCheckoutStart={({sessionId:ye})=>console.log("onCheckoutStart:",{sessionId:ye})}
+          onCheckoutQuote={({sessionId:ye,quote:qe})=>console.log("onCheckoutQuote:",{sessionId:ye,quote:qe})}
+          onCheckoutComplete={({sessionId:ye})=>console.log("onCheckoutComplete:",{sessionId:ye})}
+          onCheckoutError={({sessionId:ye,error:qe})=>console.log("onCheckoutError:",{sessionId:ye,error:qe})}
+          onCheckoutStatusUpdate={({sessionId:ye,transactionStates:qe})=>console.log("onCheckoutStatusUpdate:",{sessionId:ye,transactionStates:qe})}
+          onOpen={() => console.log('Widget modal opened')}
         />
       </CardFooter>
     </Card>

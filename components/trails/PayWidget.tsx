@@ -8,6 +8,8 @@ import {
   CardFooter,
 } from "../ui/card";
 
+const apiKey = import.meta.env.VITE_TRAILS_API_KEY;
+
 export default function PayWidget() {
   return (
     <Card className="h-full">
@@ -29,6 +31,7 @@ export default function PayWidget() {
       </CardHeader>
       <CardFooter className="mt-auto justify-center w-full">
         <TrailsWidget
+          apiKey={apiKey}
           mode="pay"
           theme="auto"
           toAddress="0xF69F076c7225651b30d17B1a9C454319A4CfE77c"

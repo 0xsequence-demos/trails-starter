@@ -8,6 +8,8 @@ import {
 } from "../ui/card";
 import { Button } from "../ui/button";
 
+const apiKey = import.meta.env.VITE_TRAILS_API_KEY;
+
 export default function FundWidget() {
   return (
     <Card className="h-full">
@@ -29,6 +31,7 @@ export default function FundWidget() {
       </CardHeader>
       <CardFooter className="mt-auto justify-center w-full">
         <TrailsWidget
+          apiKey={apiKey}
           mode="fund"
           toChainId={5031} // Base
           toToken="0x28bec7e30e6faee657a03e19bf1128aad7632a00"
