@@ -47,6 +47,40 @@ Open `http://localhost:5173`.
 
 Each widget uses the same underlying `TrailsWidget` and differs by `mode` and a few props. See `components/trails/*.tsx` for concrete usage for each and UX flows.
 
+## TrailsProvider & Hooks
+
+This starter includes the `TrailsProvider` configured in `components/Providers.tsx`, which enables the use of Trails hooks throughout your app:
+
+```tsx
+<TrailsProvider
+  config={{
+    trailsApiKey: import.meta.env.VITE_TRAILS_API_KEY ?? "",
+    // Optional: Custom API endpoints
+    // trailsApiUrl: "...",
+    // sequenceIndexerUrl: "...",
+    // sequenceNodeGatewayUrl: "..."
+  }}
+>
+  <App />
+</TrailsProvider>
+```
+
+### Example: Token Balances Hook
+
+See `components/trails/TokenBalancesExample.tsx` for a complete example using the `useTokenBalances` and `useAccountTotalBalanceUsd` hooks. This component:
+
+- Fetches all token balances across chains for the connected wallet
+- Displays total balance in USD
+- Shows individual token balances with logos and USD values
+
+Available hooks include:
+- `useTokenBalances(address)` - Fetch sorted token balances enriched with USD price
+- `useAccountTotalBalanceUsd(address)` - Get total USD balance across tokens
+- `useQuote()` - Get real-time quotes for token swaps
+- `useSupportedTokens()` - Fetch supported tokens list
+
+For more hooks and details, see the [Trails Hooks documentation](https://docs.trails.build/sdk/hooks).
+
 ## Theming
 
 - **Styling**: Each widget supports `customCss` variables (https://docs.trails.build/sdk/theming). Common tokens:
