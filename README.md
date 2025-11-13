@@ -23,9 +23,9 @@ pnpm i
 # or: npm i  |  yarn
 ```
 
-### 3) Optional: Configure environment
+### 3) Configure environment
 
-Copy the `.env.example` to `.env` file in the project root:
+Create a `.env` file in the project root by copying the `.env.example` template, then set your Trails API key:
 
 ```env
 # Request an access key at https://t.me/build_with_trails
@@ -33,6 +33,8 @@ VITE_TRAILS_API_KEY="ADD_API_KEY_HERE"
 # Optional walletconnect ID if you'd like walletconnect support, retrieved from https://cloud.walletconnect.com/.
 VITE_WALLETCONNECT_PROJECT_ID=
 ```
+
+Make sure to replace "ADD_YOUR_API_KEY_HERE" with your actual Trails API key — the project will not work without it.
 
 
 
