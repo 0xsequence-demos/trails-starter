@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   0xtrails:
-    specifier: 0.8.1
-    version: 0.8.1(0xsequence@2.3.33)(@0xsequence/api@2.3.33)(@0xsequence/metadata@2.3.33)(@0xsequence/network@2.3.33)(@react-oauth/google@0.11.1)(@tanstack/react-query@5.90.5)(@types/react-dom@19.2.2)(@types/react@19.2.2)(ethers@6.15.0)(react-apple-signin-auth@1.1.2)(react-dom@19.2.0)(react@19.2.0)(typescript@5.9.3)(viem@2.40.0)(wagmi@2.18.1)
+    specifier: 0.8.2
+    version: 0.8.2(0xsequence@2.3.33)(@0xsequence/api@2.3.33)(@0xsequence/metadata@2.3.33)(@0xsequence/network@2.3.33)(@react-oauth/google@0.11.1)(@tanstack/react-query@5.90.5)(@types/react-dom@19.2.2)(@types/react@19.2.2)(ethers@6.15.0)(react-apple-signin-auth@1.1.2)(react-dom@19.2.0)(react@19.2.0)(typescript@5.9.3)(viem@2.40.0)(wagmi@2.18.1)
   '@radix-ui/react-label':
     specifier: ^2.1.7
     version: 2.1.7(@types/react-dom@19.2.2)(@types/react@19.2.2)(react-dom@19.2.0)(react@19.2.0)
@@ -46,7 +46,7 @@ dependencies:
     version: 3.3.1
   viem:
     specifier: 2.40.0
-    version: 2.40.0(typescript@5.9.3)(zod@3.22.4)
+    version: 2.40.0(typescript@5.9.3)
   wagmi:
     specifier: 2.18.1
     version: 2.18.1(@tanstack/react-query@5.90.5)(@types/react@19.2.2)(react@19.2.0)(typescript@5.9.3)(viem@2.40.0)
@@ -118,8 +118,8 @@ packages:
       ethers: 6.15.0
     dev: false
 
-  /0xtrails@0.8.1(0xsequence@2.3.33)(@0xsequence/api@2.3.33)(@0xsequence/metadata@2.3.33)(@0xsequence/network@2.3.33)(@react-oauth/google@0.11.1)(@tanstack/react-query@5.90.5)(@types/react-dom@19.2.2)(@types/react@19.2.2)(ethers@6.15.0)(react-apple-signin-auth@1.1.2)(react-dom@19.2.0)(react@19.2.0)(typescript@5.9.3)(viem@2.40.0)(wagmi@2.18.1):
-    resolution: {integrity: sha512-Lgofaa80135A13a/RonO+IFcmgmSvA4WCBENZguDwk4hIwFyVn7WLlZNguzF3H2DXoP/ZwyZoN51BERaJXMSkQ==}
+  /0xtrails@0.8.2(0xsequence@2.3.33)(@0xsequence/api@2.3.33)(@0xsequence/metadata@2.3.33)(@0xsequence/network@2.3.33)(@react-oauth/google@0.11.1)(@tanstack/react-query@5.90.5)(@types/react-dom@19.2.2)(@types/react@19.2.2)(ethers@6.15.0)(react-apple-signin-auth@1.1.2)(react-dom@19.2.0)(react@19.2.0)(typescript@5.9.3)(viem@2.40.0)(wagmi@2.18.1):
+    resolution: {integrity: sha512-PLNdchhVQVsMnJ5uaygYIwax0yA/HqKw3l1yuzQVmQwLHAY4UyMNoxXfIKfsi6d9R354VfYy9mWdvf74asxG3w==}
     requiresBuild: true
     peerDependencies:
       '@tanstack/react-query': 5.90.3
@@ -133,7 +133,7 @@ packages:
       '@0xsequence/hooks': 5.4.4(@0xsequence/api@2.3.33)(@0xsequence/indexer@3.0.0-beta.4)(@0xsequence/metadata@2.3.33)(@0xsequence/network@2.3.33)(@tanstack/react-query@5.90.5)(react-dom@19.2.0)(react@19.2.0)(viem@2.40.0)
       '@0xsequence/indexer': 3.0.0-beta.4
       '@0xsequence/wallet-primitives': 0.0.0-20251021104024(typescript@5.9.3)
-      '@0xtrails/api': 0.8.0
+      '@0xtrails/api': 0.8.1
       '@databeat/tracker': 0.9.3
       '@radix-ui/react-tooltip': 1.2.8(@types/react-dom@19.2.2)(@types/react@19.2.2)(react-dom@19.2.0)(react@19.2.0)
       '@tanstack/react-query': 5.90.5(react@19.2.0)
@@ -141,7 +141,7 @@ packages:
       ethers: 6.15.0
       lucide-react: 0.545.0(react@19.2.0)
       motion: 12.23.24(react-dom@19.2.0)(react@19.2.0)
-      ox: 0.9.14(typescript@5.9.3)
+      ox: 0.9.14(typescript@5.9.3)(zod@4.1.12)
       qrcode: 1.5.4
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
@@ -490,8 +490,8 @@ packages:
       ethers: 6.15.0
     dev: false
 
-  /@0xtrails/api@0.8.0:
-    resolution: {integrity: sha512-qsfLRfqKAWN9q4hONa5itE34UTxBR8Eec40RIHAJPAebeO8tnpHm1rLJ27xtK/nuChp1mz01nrENQUsQFgKA2g==}
+  /@0xtrails/api@0.8.1:
+    resolution: {integrity: sha512-qcZZoF8TtazX2lf2nL/PmWeXOp+3H4qo4UzeM5o2egtS/RZrir7nXw8fZq4VfzlgWFfSDrG4zGOivLby5pFThw==}
     dev: false
 
   /@adraffy/ens-normalize@1.10.1:
@@ -7628,7 +7628,7 @@ packages:
       '@noble/hashes': 1.8.0
       '@scure/bip32': 1.7.0
       '@scure/bip39': 1.6.0
-      abitype: 1.1.1(typescript@5.9.3)(zod@3.22.4)
+      abitype: 1.1.1(typescript@5.9.3)(zod@4.1.12)
       eventemitter3: 5.0.1
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -7648,7 +7648,7 @@ packages:
       '@noble/hashes': 1.8.0
       '@scure/bip32': 1.7.0
       '@scure/bip39': 1.6.0
-      abitype: 1.1.1(typescript@5.9.3)(zod@3.22.4)
+      abitype: 1.1.1(typescript@5.9.3)(zod@4.1.12)
       eventemitter3: 5.0.1
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -7669,14 +7669,14 @@ packages:
       '@noble/hashes': 1.8.0
       '@scure/bip32': 1.7.0
       '@scure/bip39': 1.6.0
-      abitype: 1.1.1(typescript@5.9.3)(zod@3.22.4)
+      abitype: 1.1.1(typescript@5.9.3)(zod@4.1.12)
       eventemitter3: 5.0.1
       typescript: 5.9.3
     transitivePeerDependencies:
       - zod
     dev: false
 
-  /ox@0.9.14(typescript@5.9.3):
+  /ox@0.9.14(typescript@5.9.3)(zod@4.1.12):
     resolution: {integrity: sha512-lxZYCzGH00WtIPPrqXCrbSW/ZiKjigfII6R0Vu1eH2GpobmcwVheiivbCvsBZzmVZcNpwkabSamPP+ZNtdnKIQ==}
     peerDependencies:
       typescript: '>=5.4.0'
@@ -7690,15 +7690,15 @@ packages:
       '@noble/hashes': 1.8.0
       '@scure/bip32': 1.7.0
       '@scure/bip39': 1.6.0
-      abitype: 1.1.1(typescript@5.9.3)(zod@3.22.4)
+      abitype: 1.1.1(typescript@5.9.3)(zod@4.1.12)
       eventemitter3: 5.0.1
       typescript: 5.9.3
     transitivePeerDependencies:
       - zod
     dev: false
 
-  /ox@0.9.14(typescript@5.9.3)(zod@4.1.12):
-    resolution: {integrity: sha512-lxZYCzGH00WtIPPrqXCrbSW/ZiKjigfII6R0Vu1eH2GpobmcwVheiivbCvsBZzmVZcNpwkabSamPP+ZNtdnKIQ==}
+  /ox@0.9.6(typescript@5.9.3):
+    resolution: {integrity: sha512-8SuCbHPvv2eZLYXrNmC0EC12rdzXQLdhnOMlHDW2wiCPLxBrOOJwX5L5E61by+UjTPOryqQiRSnjIKCI+GykKg==}
     peerDependencies:
       typescript: '>=5.4.0'
     peerDependenciesMeta:
@@ -8794,7 +8794,7 @@ packages:
       '@scure/bip39': 1.6.0
       abitype: 1.1.0(typescript@5.9.3)(zod@3.22.4)
       isows: 1.0.7(ws@8.18.3)
-      ox: 0.9.6(typescript@5.9.3)(zod@3.22.4)
+      ox: 0.9.6(typescript@5.9.3)
       typescript: 5.9.3
       ws: 8.18.3(bufferutil@4.0.9)(utf-8-validate@5.0.10)
     transitivePeerDependencies:
