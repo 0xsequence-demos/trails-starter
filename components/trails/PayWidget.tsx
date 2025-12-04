@@ -7,6 +7,7 @@ import {
   CardFooter,
 } from "../ui/card";
 
+
 const apiKey = import.meta.env.VITE_TRAILS_API_KEY;
 
 export default function PayWidget() {
@@ -30,13 +31,13 @@ export default function PayWidget() {
       </CardHeader>
       <CardFooter className="mt-auto justify-center w-full">
         <TrailsWidget
-          apiKey={apiKey}
           mode="pay"
-          theme="auto"
+          apiKey={apiKey}
+          theme="light"
           toAddress="0xF69F076c7225651b30d17B1a9C454319A4CfE77c"
-          toAmount="0.1"
+          toAmount="0.15"
           toChainId={42161}
-          toToken="USDC"
+          toToken="0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
           toCalldata="0x6a62784200000000000000000000000097c4a952b46becad0663f76357d3776ba11566e1"
           buttonText="Pay with Trails"
           customCss={`

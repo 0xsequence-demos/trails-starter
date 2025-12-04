@@ -1,45 +1,40 @@
-import { getDefaultConfig, RainbowKitProvider } from "@rainbow-me/rainbowkit";
-import { WagmiProvider } from "wagmi";
-import { injectedWallet } from '@rainbow-me/rainbowkit/wallets';
-// Optional wallets (uncomment to enable)
-// import { walletConnectWallet, rainbowWallet } from '@rainbow-me/rainbowkit/wallets';
-import { mainnet, polygon, optimism, arbitrum, base, soneium } from "wagmi/chains";
+import { useRef } from "react";
+import { createConfig, http, WagmiProvider } from "wagmi";
+import { mainnet, polygon, optimism, arbitrum, base } from "wagmi/chains";
+import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import { TrailsProvider } from "0xtrails";
 
-const config = getDefaultConfig({
-  appName: "Trails Starter",
-  projectId: import.meta.env.VITE_WALLETCONNECT_PROJECT_ID ?? "",
-  chains: [mainnet, polygon, optimism, arbitrum, base, soneium],
-  wallets: [
-    {
-      groupName: "Injected Wallets",
-      wallets: [injectedWallet],
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      gcTime: 1000 * 60 * 60 * 24, // 24 hours
     },
-    // Uncomment to include WalletConnect and Rainbow wallets in the modal
-    // {
-    //   groupName: "Other Wallets",
-    //   wallets: [
-    //     walletConnectWallet({ projectId: import.meta.env.VITE_WALLETCONNECT_PROJECT_ID ?? "" }),
-    //     rainbowWallet({ projectId: import.meta.env.VITE_WALLETCONNECT_PROJECT_ID ?? "" }),
-    //   ],
-    // },
-  ],
-  ssr: false, // If your dApp uses server side rendering (SSR)
+  },
 });
-const queryClient = new QueryClient();
 
 export function Providers({ children }: { children: React.ReactNode }) {
+  const config = useRef<ReturnType<typeof createConfig> | null>(null);
+
+  if (!config.current) {
+    config.current = createConfig({
+      chains: [mainnet, polygon, optimism, arbitrum, base],
+      transports: {
+        [mainnet.id]: http(),
+        [polygon.id]: http(),
+        [optimism.id]: http(),
+        [arbitrum.id]: http(),
+        [base.id]: http(),
+      },
+    });
+  }
+
   return (
-    <WagmiProvider config={config}>
+    <WagmiProvider config={config.current}>
       <QueryClientProvider client={queryClient}>
-        <TrailsProvider // only needed if using Trails React Hooks
+        <TrailsProvider
           config={{
             trailsApiKey: import.meta.env.VITE_TRAILS_API_KEY ?? "",
-            // Optional: Custom API endpoints
-            // trailsApiUrl: "...",
-            // sequenceIndexerUrl: "...",
-            // sequenceNodeGatewayUrl: "..."
           }}
         >
           <RainbowKitProvider>{children}</RainbowKitProvider>

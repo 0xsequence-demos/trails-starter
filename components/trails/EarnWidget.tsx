@@ -32,7 +32,7 @@ export default function EarnWidget() {
         <TrailsWidget
           apiKey={apiKey}
           mode="earn"
-          theme="auto"
+          theme="light"
           buttonText="Start Earning"
           customCss={`
             --trails-border-radius-button: 9999px;

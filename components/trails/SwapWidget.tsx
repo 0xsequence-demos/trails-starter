@@ -32,7 +32,7 @@ export default function SwapWidget() {
         <TrailsWidget
           apiKey={apiKey}
           mode="swap"
-          theme="auto"
+          theme="light"
           buttonText="Swap with Trails"
           customCss={`
             --trails-font-family: "Century Gothic", "Arial", sans-serif;

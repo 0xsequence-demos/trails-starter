@@ -26,7 +26,7 @@ export default function FundWidget() {
         </CardTitle>
         <CardDescription>
           Deposit into a chain, app, or protocol, in this case USDC on Base. Users choose how much
-          to send from any token with a variable amount. Fiat on-ramping also supported from exchanges.
+          to send from any token with a variable amount.
         </CardDescription>
       </CardHeader>
       <CardFooter className="mt-auto justify-center w-full">
@@ -34,8 +34,7 @@ export default function FundWidget() {
           apiKey={apiKey}
           mode="fund"
           toChainId={8543} // Base
-          toToken="0x28bec7e30e6faee657a03e19bf1128aad7632a00"
-          theme="auto"
+          theme="light"
           buttonText="Fund with Trails"
           customCss={`
             --trails-border-radius-button: 9999px;
