@@ -1,9 +1,10 @@
+import { TrailsProvider } from "0xtrails";
+import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useRef } from "react";
 import { createConfig, http, WagmiProvider } from "wagmi";
-import { mainnet, polygon, optimism, arbitrum, base } from "wagmi/chains";
-import { RainbowKitProvider } from "@rainbow-me/rainbowkit";
-import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
-import { TrailsProvider } from "0xtrails";
+import { arbitrum, base, mainnet, optimism, polygon } from "wagmi/chains";
+import { walletConnect } from "wagmi/connectors";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -16,9 +17,19 @@ const queryClient = new QueryClient({
 export function Providers({ children }: { children: React.ReactNode }) {
   const config = useRef<ReturnType<typeof createConfig> | null>(null);
 
+  const projectId = import.meta.env.VITE_WALLETCONNECT_PROJECT_ID;
+
   if (!config.current) {
     config.current = createConfig({
       chains: [mainnet, polygon, optimism, arbitrum, base],
+      ...(projectId && {
+        connectors: [
+          walletConnect({
+            projectId,
+            showQrModal: false,
+          }),
+        ],
+      }),
       transports: {
         [mainnet.id]: http(),
         [polygon.id]: http(),
